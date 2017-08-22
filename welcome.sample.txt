@@ -1,6 +1,6 @@
 **PLEASE READ THE FOLLOWING!**
 
-Hello :NAME:! I am the Final Fantasy XIV BOT - Welcome. Please make sure to read the rules in #announcements before posting.
+Hello :NAME:! I am the Final Fantasy XIV BOT - Welcome.
 
 In order to identify yourself and post on our channels, we need to assign you a role. Please reply to this private message with one of the following commands based on your primary role in FFXIV (exactly as written below) :
 
