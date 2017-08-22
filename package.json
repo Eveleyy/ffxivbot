@@ -1,5 +1,5 @@
 {
-  "name": "Eveley bot",
+  "name": "ffxivbot",
   "version": "0.3.7",
   "description": "Discord bot for Final Fantasy XIV",
   "main": "bot.js",

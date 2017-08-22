@@ -96,7 +96,7 @@ app.addCommand = addCommand;
 
 function parseCommand(msg) {
 
-    return co(function*) () {
+    return co(function* () {
 
         // ignore commands from bots and self
         if (msg.author.id === client.user.id) return;
