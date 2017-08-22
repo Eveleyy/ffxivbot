@@ -40,7 +40,7 @@ client.on("disconnect", function (e) {
     logger.debug("Disconnected from discord: " + util.inspect(e));
     // workaround discord.js not re-connecting after a clean disconnect
     if(e.code === 1000) {
-        client.destroy().then(client.login.bind(client)); 
+        client.destroy().then(client.login.bind(client));
     }
 });
 
@@ -56,13 +56,13 @@ client.once("ready", function () {
         client.user.setGame(config.discord.playing);
     }
     logger.info("%s is ready!", client.user.username);
-    logger.verbose("Listening to %s channels on %s servers", 
+    logger.verbose("Listening to %s channels on %s servers",
         client.channels.array().length, client.guilds.array().length);
 
     if(config.discord.defaultGuild) {
         // configure the default servers
         if (app.defaultGuild = client.guilds.find("name", config.discord.defaultGuild)) {
-            logger.info("setting default guild to: %s [%s]", 
+            logger.info("setting default guild to: %s [%s]",
                     app.defaultGuild.name, app.defaultGuild.id);
         } else {
             logger.warn("unable to find default server: %s", config.discord.defaultGuild);
@@ -95,15 +95,15 @@ function addCommand(cmd) {
 app.addCommand = addCommand;
 
 function parseCommand(msg) {
-    
-    return co(function* () {
+
+    return co(function*) () {
 
         // ignore commands from bots and self
         if (msg.author.id === client.user.id) return;
         if (msg.author.bot) return;
 
         var content;
-        
+
         // look for the command prefix or PM without the prefix
         if(msg.content.toLowerCase().startsWith(config.commandPrefix)) {
             // strip off the prefix
@@ -121,7 +121,7 @@ function parseCommand(msg) {
             dest: msg.channel
         };
 
-        logger.debug("got message from [%s] in channel [%s]: ", 
+        logger.debug("got message from [%s] in channel [%s]: ",
             msg.author.username, (msg.channel.name || "PM"), content);
 
         // split into command and args

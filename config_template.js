@@ -8,7 +8,7 @@ module.exports = {
         token: "DISCORD_TOKEN",
         adminRole: "admin",
         defaultGuild: "",
-        playing: "hide and seek",
+        playing: "Giving roles",
         // set 'raw' to 'true' to log all events from discord
         raw: false
     },
@@ -46,11 +46,11 @@ module.exports = {
         "player_lfg": {
             maxTokens: 5,
             tokenInterval: 3600
-        } 
+        }
     },
     monitor: {
         output: "monitor",
-        events: [ 
+        events: [
             "message", "messageDelete", "messageUpdate",
             "guildMemberAdd", "guildMemberRemove"
         ]
