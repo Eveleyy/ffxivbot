@@ -1,0 +1,6 @@
+node_modules
+config.js
+.vscode
+.idea
+npm-debug.log
+welcome.txt

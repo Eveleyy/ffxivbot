@@ -1,0 +1,32 @@
+{
+  "name": "Eveley bot",
+  "version": "0.3.7",
+  "description": "Discord bot for Final Fantasy XIV",
+  "main": "bot.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha --bail"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "ffxiv"
+  ],
+  "author": [
+    "Eveley",
+    "GeekyDeaks"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "cron-parser": "^2.4.0",
+    "discord.js": "^11.0.0",
+    "promisify-node": "^0.4.0",
+    "winston": "^2.3.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7"
+  }
+}
