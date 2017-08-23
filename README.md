@@ -63,7 +63,7 @@ You can setup a channel to be wiped via a cron-job.
     purge: {
         "casual_content": "0 4 * * *"
          ┬                 ┬ ┬ ┬ ┬ ┬
-         │                 │ │ │ │ |
+         │                 │ │ │ │ │
          │                 │ │ │ │ └ day of week (0 - 7) (0 or 7 is Sun)
          │                 │ │ │ └───── month (1 - 12)
          │                 │ │ └────────── day of month (1 - 31)
